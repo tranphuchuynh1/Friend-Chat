@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="chat_app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>chat_app</title>
+  <link rel="manifest" href="manifest.json">
+
+
+  <!-- Firebase setup -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-storage.js"></script>
+  <script>
+    import { initializeApp } from 'firebase/app';
+    import { getAuth } from 'firebase/auth';
+    import { getFirestore } from 'firebase/firestore';
+    import { getStorage } from 'firebase/storage';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAqUvrkWYYg-fpGScFZ36XI9JFyaoJci5U",
+      authDomain: "phat-trien-android-appchat.firebaseapp.com",
+      projectId: "phat-trien-android-appchat",
+      storageBucket: "phat-trien-android-appchat.appspot.com",
+      messagingSenderId: "231388560017",
+      appId: "1:231388560017:web:7673d4fc035d7e3ef11d30",
+      measurementId: "G-WMJ08CJ5Z2"
+      };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const firestore = getFirestore(app);
+    const storage = getStorage(app);
+  </script>
+
+
+
+</head>
+<body>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('flutter-first-frame', function () {
+      navigator.serviceWorker.register('flutter_service_worker.js');
+    });
+  }
+</script>
+<script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
+
+

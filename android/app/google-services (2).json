@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "231388560017",
+    "project_id": "phat-trien-android-appchat",
+    "storage_bucket": "phat-trien-android-appchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231388560017:android:d4dcb8a4cdc2d22bf11d30",
+        "android_client_info": {
+          "package_name": "com.example.chat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3BYCKgFf8pthQuMrgAePppS5NxEdTopA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
